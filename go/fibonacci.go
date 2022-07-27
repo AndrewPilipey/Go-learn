@@ -6,14 +6,6 @@ var f0 int = 0
 var f1 int = 1
 var f2 int
 
-func test() {
-	fmt.Println("git")
-}
-
-func test2() {
-	fmt.Println("git")
-}
-
 func main() {
 	fmt.Println(f0, f1) //вывожу вне цикла
 	for i := 3; i <= 20; i++ {
