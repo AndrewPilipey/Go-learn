@@ -1,13 +1,14 @@
-package main //указатели, отработка
+package main //задача на замену местами значений переменных
 
 import "fmt"
 
-func zero(xPtr *int) {
-	*xPtr = 0
+func swap(x, y *int) {
+	*x, *y = *y, *x
 }
 
 func main() {
-	x := 5
-	zero(&x)
-	fmt.Println(x)
+	x, y := 1, 2
+	fmt.Println("Before x, y = ", x, y)
+	swap(&x, &y)
+	fmt.Println("After x, y = ", x, y)
 }
